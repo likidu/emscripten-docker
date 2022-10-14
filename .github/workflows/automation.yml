@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: likidu/emscripten-docker:latest, likidu/emscripten-docker:${{ github.run_number }}
+          tags: likidu/emscripten:latest, likidu/emscripten:${{ github.run_number }}

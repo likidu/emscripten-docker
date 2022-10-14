@@ -8,4 +8,4 @@ RUN apt-get update && \
 
 RUN apt-get update && \
   apt-get upgrade -y && \
-  apt-get install -y cmake ninja-build libsfml-dev &&\
+  apt-get install -y cmake ninja-build libsfml-dev

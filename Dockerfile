@@ -8,4 +8,9 @@ RUN apt-get update && \
 
 RUN apt-get update && \
   apt-get upgrade -y && \
-  apt-get install -y cmake ninja-build libsfml-dev
+  apt-get install -y cmake ninja-build flac libogg-dev libvorbis-dev libvorbisenc2 libvorbisfile3 libflac-dev freeglut3-dev libjpeg-dev libfreetype-dev libxrandr-dev libglew-dev libsndfile1-dev libopenal-dev libncurses5-dev libncursesw5-dev libsfml-dev && \
+  apt-get autoclean -y && \
+  apt-get autoremove -y && \
+  rm -rf /var/lib/apt/lists/*
+
+ENV TERM=xterm-256color
